@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7EC2FD">
+
+    <EditText
+        android:id="@+id/total_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="30dp"
+        android:hint="Total Bill" />
+
+    <EditText
+        android:id="@+id/num_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="30dp"
+        android:hint="Number of People" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:textSize="17dp"
+        android:text="Calculate"
+        android:layout_gravity="center"
+        android:textColor="?attr/colorButtonNormal" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="25dp"
+        android:text="" />
+
+</LinearLayout>

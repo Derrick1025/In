@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7EC2FD">
+
+    <EditText
+        android:id="@+id/totalBillEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:hint="Enter total bill amount"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/person1AmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:hint="Person 1 amount"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/person2AmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:hint="Person 2 amount"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/person3AmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:hint="Person 3 amount"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/person4AmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:hint="Person 4 amount"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:textColor="?attr/colorButtonNormal"
+        android:layout_gravity="center"
+        android:textSize="17dp"
+        android:text="Verify Amounts" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

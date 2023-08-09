@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7EC2FD">
+
+    <EditText
+        android:id="@+id/totalBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="30dp"
+        android:hint="Enter total bill"/>
+
+    <EditText
+        android:id="@+id/ratios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:hint="Enter ratios separated by comma"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:textColor="?attr/colorButtonNormal"
+        android:layout_gravity="center"
+        android:textSize="17dp"
+        android:text="Calculate"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="533dp"
+        android:textSize="25dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#7EC2FD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="307dp"
+        android:layout_height="61dp"
+        android:layout_above="@+id/equal_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Bill breakdown application"
+        android:textColor="#4F73F6"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/equal_button"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/custom_perc_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/button"
+        android:radius="10dp"
+        android:state_pressed="true"
+        android:text="Equal Breakdown"
+        android:textColor="?attr/colorButtonNormal" />
+
+    <Button
+        android:id="@+id/custom_perc_button"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/custom_amount_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/button"
+        android:text="Custom Percentage Breakdown"
+        android:textColor="?attr/colorButtonNormal" />
+
+    <Button
+        android:id="@+id/custom_amount_button"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="113dp"
+        android:background="@drawable/button"
+        android:text="Custom Amount Breakdown"
+        android:textColor="?attr/colorButtonNormal"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="191dp"
+        android:layout_above="@+id/Title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="34dp"
+        app:srcCompat="@drawable/_52791" />
+
+
+</RelativeLayout>
