@@ -69,12 +69,15 @@ public class CustomBreakdownActivity extends AppCompatActivity {
                 resultTextView.setText(result);
 
                 SharedPreferences pref = getSharedPreferences("appData", MODE_PRIVATE);
+                //String existingBreakdown = pref.getString("billBreakdown", "");
+
+                //String combinedData = existingBreakdown + "\n" + result;
+
                 SharedPreferences.Editor editor = pref.edit();
-                editor.putString("billBreakdown", result);  // 'result' is the breakdown string
+                editor.putString("Custom billBreakdown", result);
                 editor.commit();
 
-                SharedPreferences prefRead = getSharedPreferences("appData", 0 );
-                String savedBreakdown = prefRead.getString("billBreakdown", "N/A");
+
             }
         });
     }

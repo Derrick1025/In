@@ -55,7 +55,7 @@ public class EqualBreakdownActivity extends AppCompatActivity {
 
                 SharedPreferences pref = getSharedPreferences("appData", MODE_PRIVATE);
                 SharedPreferences.Editor editor = pref.edit();
-                editor.putString("billBreakdown", result);  // 'result' is the breakdown string
+                editor.putString("Equal billBreakdown", result);  // 'result' is the breakdown string
                 editor.commit();
 
                 SharedPreferences prefRead = getSharedPreferences("appData", 0 );
